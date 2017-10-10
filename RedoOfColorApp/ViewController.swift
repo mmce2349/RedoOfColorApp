@@ -29,6 +29,8 @@ class ViewController: UIViewController
             Button.backgroundColor = .white
         }
         view.backgroundColor = createRandomColor()
+        Button.setTitleColor(createRandomColor(), for: .normal)
+        
     }
     
     private func createRandomColor() -> UIColor
