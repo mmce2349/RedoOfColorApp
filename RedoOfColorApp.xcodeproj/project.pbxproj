@@ -54,14 +54,38 @@
 		0B2BBC401F8D03AC0002CEFB /* RedoOfColorApp */ = {
 			isa = PBXGroup;
 			children = (
-				0B2BBC411F8D03AC0002CEFB /* AppDelegate.swift */,
-				0B2BBC431F8D03AC0002CEFB /* ViewController.swift */,
-				0B2BBC451F8D03AC0002CEFB /* Main.storyboard */,
-				0B2BBC481F8D03AC0002CEFB /* Assets.xcassets */,
-				0B2BBC4A1F8D03AC0002CEFB /* LaunchScreen.storyboard */,
-				0B2BBC4D1F8D03AC0002CEFB /* Info.plist */,
+				0B2BBC531F8D18910002CEFB /* Controller */,
+				0B2BBC541F8D18B80002CEFB /* View */,
+				0B2BBC551F8D18CB0002CEFB /* Resources */,
 			);
 			path = RedoOfColorApp;
+			sourceTree = "<group>";
+		};
+		0B2BBC531F8D18910002CEFB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0B2BBC411F8D03AC0002CEFB /* AppDelegate.swift */,
+				0B2BBC431F8D03AC0002CEFB /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0B2BBC541F8D18B80002CEFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0B2BBC451F8D03AC0002CEFB /* Main.storyboard */,
+				0B2BBC4A1F8D03AC0002CEFB /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0B2BBC551F8D18CB0002CEFB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0B2BBC481F8D03AC0002CEFB /* Assets.xcassets */,
+				0B2BBC4D1F8D03AC0002CEFB /* Info.plist */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
