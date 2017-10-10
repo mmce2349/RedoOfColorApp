@@ -20,13 +20,13 @@ class ViewController: UIViewController
     
     @IBAction func FirstMethod(_ sender: UIButton)
     {
-        if (Button.backgroundColor == .red)
+        if (Button.backgroundColor == .white)
         {
             Button.backgroundColor = .black
         }
         else
         {
-            Button.backgroundColor = .black
+            Button.backgroundColor = .white
         }
         view.backgroundColor = createRandomColor()
     }
