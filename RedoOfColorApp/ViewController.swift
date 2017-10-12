@@ -41,10 +41,10 @@ class ViewController: UIViewController
       {
         Button.isHidden = false
       }
-       else
+    else
       {
         Button.isHidden = true
-        }
+      }
     }
     
     
