@@ -17,6 +17,8 @@ class ViewController: UIViewController
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    @IBOutlet weak var Switch: UISwitch!
+    @IBOutlet weak var ImagePower: UIImageView!
     
     @IBAction func FirstMethod(_ sender: UIButton)
     {
@@ -32,6 +34,12 @@ class ViewController: UIViewController
         Button.setTitleColor(createRandomColor(), for: .normal)
         
     }
+  
+    @IBAction func SwitchPower(_ sender: UISwitch)
+    {
+        
+    }
+    
     
     private func createRandomColor() -> UIColor
     {
