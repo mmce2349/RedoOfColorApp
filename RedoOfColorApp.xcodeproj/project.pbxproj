@@ -13,6 +13,7 @@
 		0B2BBC491F8D03AC0002CEFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B2BBC481F8D03AC0002CEFB /* Assets.xcassets */; };
 		0B2BBC4C1F8D03AC0002CEFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B2BBC4A1F8D03AC0002CEFB /* LaunchScreen.storyboard */; };
 		0BD007621F8FB9D7004F9725 /* SecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD007611F8FB9D7004F9725 /* SecondController.swift */; };
+		0BD007651F8FBEDC004F9725 /* ColorTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD007641F8FBEDC004F9725 /* ColorTools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0B2BBC4B1F8D03AC0002CEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B2BBC4D1F8D03AC0002CEFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BD007611F8FB9D7004F9725 /* SecondController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondController.swift; sourceTree = "<group>"; };
+		0BD007641F8FBEDC004F9725 /* ColorTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTools.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		0B2BBC401F8D03AC0002CEFB /* RedoOfColorApp */ = {
 			isa = PBXGroup;
 			children = (
+				0BD007631F8FBEA0004F9725 /* Model */,
 				0B2BBC531F8D18910002CEFB /* Controller */,
 				0B2BBC541F8D18B80002CEFB /* View */,
 				0B2BBC551F8D18CB0002CEFB /* Resources */,
@@ -89,6 +92,14 @@
 				0B2BBC4D1F8D03AC0002CEFB /* Info.plist */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		0BD007631F8FBEA0004F9725 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BD007641F8FBEDC004F9725 /* ColorTools.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +177,7 @@
 				0BD007621F8FB9D7004F9725 /* SecondController.swift in Sources */,
 				0B2BBC441F8D03AC0002CEFB /* ViewController.swift in Sources */,
 				0B2BBC421F8D03AC0002CEFB /* AppDelegate.swift in Sources */,
+				0BD007651F8FBEDC004F9725 /* ColorTools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
