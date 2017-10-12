@@ -37,7 +37,14 @@ class ViewController: UIViewController
   
     @IBAction func SwitchPower(_ sender: UISwitch)
     {
-        
+      if Switch.isOn
+      {
+        Button.isHidden = false
+      }
+       else
+      {
+        Button.isHidden = true
+        }
     }
     
     
