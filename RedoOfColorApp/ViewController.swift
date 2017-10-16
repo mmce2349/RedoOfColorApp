@@ -36,6 +36,8 @@ class ViewController: UIViewController
         
     }
   
+    //I dont know what to add.
+    
     @IBAction func SwitchPower(_ sender: UISwitch)
     {
       if Switch.isOn
