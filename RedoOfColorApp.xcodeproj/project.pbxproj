@@ -12,6 +12,7 @@
 		0B2BBC471F8D03AC0002CEFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B2BBC451F8D03AC0002CEFB /* Main.storyboard */; };
 		0B2BBC491F8D03AC0002CEFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B2BBC481F8D03AC0002CEFB /* Assets.xcassets */; };
 		0B2BBC4C1F8D03AC0002CEFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B2BBC4A1F8D03AC0002CEFB /* LaunchScreen.storyboard */; };
+		0B35F93B1F9503EF00A0CD5F /* ThirdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B35F93A1F9503EF00A0CD5F /* ThirdController.swift */; };
 		0BD007621F8FB9D7004F9725 /* SecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD007611F8FB9D7004F9725 /* SecondController.swift */; };
 		0BD007651F8FBEDC004F9725 /* ColorTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD007641F8FBEDC004F9725 /* ColorTools.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 		0B2BBC481F8D03AC0002CEFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B2BBC4B1F8D03AC0002CEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B2BBC4D1F8D03AC0002CEFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B35F93A1F9503EF00A0CD5F /* ThirdController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdController.swift; sourceTree = "<group>"; };
 		0BD007611F8FB9D7004F9725 /* SecondController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondController.swift; sourceTree = "<group>"; };
 		0BD007641F8FBEDC004F9725 /* ColorTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTools.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +74,7 @@
 				0B2BBC411F8D03AC0002CEFB /* AppDelegate.swift */,
 				0B2BBC431F8D03AC0002CEFB /* ViewController.swift */,
 				0BD007611F8FB9D7004F9725 /* SecondController.swift */,
+				0B35F93A1F9503EF00A0CD5F /* ThirdController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BD007621F8FB9D7004F9725 /* SecondController.swift in Sources */,
+				0B35F93B1F9503EF00A0CD5F /* ThirdController.swift in Sources */,
 				0B2BBC441F8D03AC0002CEFB /* ViewController.swift in Sources */,
 				0B2BBC421F8D03AC0002CEFB /* AppDelegate.swift in Sources */,
 				0BD007651F8FBEDC004F9725 /* ColorTools.swift in Sources */,

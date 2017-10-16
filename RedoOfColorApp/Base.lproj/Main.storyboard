@@ -78,6 +78,34 @@
             </objects>
             <point key="canvasLocation" x="-98.400000000000006" y="123.68815592203899"/>
         </scene>
+        <!--Third Controller-->
+        <scene sceneID="799-pd-Uq9">
+            <objects>
+                <viewController id="PeM-2B-ilL" customClass="ThirdController" customModule="RedoOfColorApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hbl-Za-m4o"/>
+                        <viewControllerLayoutGuide type="bottom" id="2GG-fk-7RP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j8v-cr-a2B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqT-IZ-mjj">
+                                <rect key="frame" x="-15" y="629" width="96" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go back"/>
+                                <connections>
+                                    <segue destination="LIZ-sH-wmD" kind="show" id="WTr-K5-gyM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o6g-z5-eK7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="852.3238380809596"/>
+        </scene>
         <!--Second Controller-->
         <scene sceneID="NOL-C1-ub1">
             <objects>
@@ -100,6 +128,14 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="yFo-z9-fUD"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4K5-xV-W0K">
+                                <rect key="frame" x="246" y="629" width="113" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="THIRD PAGE!!!!!"/>
+                                <connections>
+                                    <segue destination="PeM-2B-ilL" kind="show" id="uww-Ki-VSV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -109,4 +145,7 @@
             <point key="canvasLocation" x="616.79999999999995" y="123.68815592203899"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="WTr-K5-gyM"/>
+    </inferredMetricsTieBreakers>
 </document>
