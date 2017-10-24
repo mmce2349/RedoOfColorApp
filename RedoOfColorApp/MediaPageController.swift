@@ -15,6 +15,7 @@ class MediaPageController: UIViewController
     @IBOutlet weak var ImageButton: UIButton!
     @IBOutlet weak var soundButton: UIButton!
     @IBOutlet weak var soundSlider: UISlider!
+    
     private var soundPlayer: AVAudioPlayer?
     private var imageCounter: Int = 0
     private lazy var color : ColorTools = ColorTools()
@@ -49,7 +50,67 @@ class MediaPageController: UIViewController
         {
             ImageFrame.image = UIImage(named: "BaldMan")
         }
-        imageCounter += 1
+                imageCounter += 1
+    }
+    
+    public override func viewDidLoad() -> Void
+    {
+        super.viewDidLoad()
+        view.backgroundColor = color.createRandomColor()
+        loadAudioFile()
+    }
+    
+    public override func didReceiveMemoryWarning()
+    {
+        super.didReceiveMemoryWarning()
+    }
+    
+    @IBAction func soundPlay(_ sender: Any)
+    {
+        playMusicFile()
+    }
+    
+    private func playMusicFile()
+    {
+        if let isPlaying = soundPlayer?.isPlaying
+        {
+            if (isPlaying)
+            {
+                soundPlayer?.pause()
+            }
+            else
+            {
+                soundPlayer?.play()
+            }
+        }
+    }
+    private func loadAudioFile() -> Void
+    {
+        if let soundURL = NSDataAsset(name: "")
+        {
+            do
+            {
+                try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+                try! AVAudioSession.sharedInstance().setActive(true)
+                
+            //    try soundPlayer = AVAudioPlayer(date: soundURL.data, fileTypeHint: AVFileType.mp3.rawValue)
+               // soundSlider.maxiumValue = Float ((soundPlayer?.duration)!)
+                Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: (#selector(self.updateSlider)), userInfo: nil, repeats: true)
+            }
+            catch
+            {
+                print("Audio File Load Error")
+            }
+        }
+    }
+    @objc private func updateSlider() -> Void
+    {
+        soundSlider.value = Float ((soundPlayer?.currentTime)!)
+    }
+    @IBAction func SlidingSound(_ sender: UISlider)
+    {
+        let seekTime = Double (soundSlider.value)
+        soundPlayer?.currentTime = seekTime
     }
     
 }
