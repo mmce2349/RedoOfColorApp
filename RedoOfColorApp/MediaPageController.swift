@@ -93,8 +93,8 @@ class MediaPageController: UIViewController
                 try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
                 try! AVAudioSession.sharedInstance().setActive(true)
                 
-            //    try soundPlayer = AVAudioPlayer(date: soundURL.data, fileTypeHint: AVFileType.mp3.rawValue)
-               // soundSlider.maxiumValue = Float ((soundPlayer?.duration)!)
+               try soundPlayer = AVAudioPlayer(data: soundURL.data)
+                soundSlider.maximumValue = Float ((soundPlayer?.duration)!)
                 Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: (#selector(self.updateSlider)), userInfo: nil, repeats: true)
             }
             catch
